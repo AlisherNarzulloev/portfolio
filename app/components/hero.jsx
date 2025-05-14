@@ -28,7 +28,6 @@ export default function Hero() {
   return (
     <>
       <SectionWrapper>
-        {" "}
         <div className="w-full h-screen flex flex-col gap-16 justify-center relative">
           <div className="relative">
             <div className="w-1/2 text-nowrap relative z-10 flex flex-col gap-8">
