@@ -1,6 +1,7 @@
 import { Sora } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${sora.className} antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
