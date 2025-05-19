@@ -1,4 +1,5 @@
 import About from "./components/about";
+import Cta from "./components/cta";
 import Experience from "./components/experiense";
 import Hero from "./components/hero";
 import Projects from "./components/projects";
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Projects />
       <Reviews />
+      <Cta />
     </>
   );
 }

@@ -12,7 +12,9 @@ export default function Header() {
           <h5 className="font-bold text-xl">Personal</h5>
         </Link>
         <HeaderLinks />
-        <Button text={"Resume"} icon={"download"} />
+        <div>
+          <Button text={"Resume"} icon={"download"} />
+        </div>
       </header>
     </>
   );
