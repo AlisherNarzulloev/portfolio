@@ -35,14 +35,14 @@ export default function Experience() {
       <SectionWrapper type="black" size="large">
         <div className="flex flex-col gap-8 text-white items-center container mx-auto">
           <Text text1={"My"} text2={"Experience"} type2="bold" />
-          <div className="flex gap-8 flex-col items-center">
+          <div className="flex gap-4 md:gap-8 flex-col items-center">
             {experiences.map((exp) => (
               <div
                 key={exp.title}
-                className="p-8 border border-zinc-500 rounded-2xl flex flex-col gap-8 w-2/3 hover:bg-zinc-800 hover:border-zinc-800 transition duration-200 hover:scale-105"
+                className="p-8 border border-zinc-500 rounded-2xl flex flex-col gap-4 md:gap-8 w-full lg:w-3/4 xl:w-2/3 hover:bg-zinc-800 hover:border-zinc-800 transition duration-200 hover:scale-105"
               >
-                <div className="flex justify-between items-center">
-                  <div className="flex gap-5 items-center">
+                <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
+                  <div className="flex flex-col md:flex-row gap-5 items-center">
                     <span className="size-9">{exp.icon}</span>
                     <p className="text-2xl font-semibold">{exp.title}</p>
                   </div>

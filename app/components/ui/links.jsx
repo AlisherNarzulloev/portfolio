@@ -21,7 +21,7 @@ export default function HeaderLinks() {
   ];
   return (
     <>
-      <ul className="flex gap-8">
+      <ul className="md:flex gap-8 hidden">
         {links.map((link) => (
           <li key={link.url}>
             <Link href={link.url} className="text-xl font-semibold">

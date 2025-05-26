@@ -27,11 +27,11 @@ export default function Hero() {
 
   return (
     <>
-      <SectionWrapper>
-        <div className="w-full h-screen flex flex-col gap-16 justify-center relative">
-          <div className="relative">
-            <div className="w-1/2 text-nowrap relative z-10 flex flex-col gap-8">
-              <div className="flex flex-col gap-5">
+      <SectionWrapper height="min">
+        <div className="w-full xl:h-screen flex flex-col gap-4 lg:gap-16 justify-center relative">
+          <div className="relative flex flex-col gap-4">
+            <div className="w-full lg:w-1/2 order-1 text-nowrap relative z-10 flex flex-col gap-4 lg:gap-8">
+              <div className="flex flex-col items-start gap-2 md:gap-5">
                 <Text
                   text1={"Hello I'm"}
                   text2={"Alisher Narzulloev"}
@@ -54,8 +54,8 @@ export default function Hero() {
                 specimen book.
               </p>
             </div>
-            <div className="absolute top-1/2 -translate-y-1/2 right-0">
-              <Image src={hero} className="h-full " alt="hero banner" />
+            <div className="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 flex justify-center lg:justify-end">
+              <Image src={hero} className="w-2/3 xl:w-full" alt="hero banner" />
             </div>
           </div>
           <Cards icons={social_links} />

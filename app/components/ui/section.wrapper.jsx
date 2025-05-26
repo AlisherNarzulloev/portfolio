@@ -10,8 +10,8 @@ export default function SectionWrapper({
   }[type];
 
   const sizee = {
-    base: "py-8",
-    large: "py-16",
+    base: "py-4 md:py-8",
+    large: "py-8 md:py-16",
   }[size];
 
   const heightt = {
@@ -20,7 +20,9 @@ export default function SectionWrapper({
   }[height];
   return (
     <>
-      <section className={`${style} ${sizee} ${heightt}`}>{children}</section>
+      <section className={`${style} ${sizee} ${heightt} px-4 md:px-0`}>
+        {children}
+      </section>
     </>
   );
 }

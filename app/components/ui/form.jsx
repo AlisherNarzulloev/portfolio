@@ -24,7 +24,7 @@ export default function Form() {
 
   return (
     <>
-      <form className="flex flex-col gap-5">
+      <form className="flex flex-col gap-5 w-full md:w-2/3 lg:w-full">
         <fieldset className="flex flex-col gap-5">
           <input
             type="text"
@@ -53,7 +53,7 @@ export default function Form() {
             required
           ></textarea>
         </fieldset>
-        <fieldset className="flex justify-between gap-8">
+        <fieldset className="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6 xl:gap-8">
           <Button text={"Get in touch"} />
           <Cards icons={social_links} />
         </fieldset>

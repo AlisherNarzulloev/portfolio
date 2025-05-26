@@ -6,11 +6,15 @@ import Text from "./ui/text";
 export default function About() {
   return (
     <>
-      <SectionWrapper>
-        <div className="grid grid-cols-2">
-          <Image src={about} alt="about section image" className="w-3/4 " />
-          <div className="flex items-center">
-            <div className="flex flex-col justify-between h-3/4">
+      <SectionWrapper height="min">
+        <div className="grid grid-cols-1 py-8 lg:py-0 lg:grid-cols-2 gap-4 lg:gap-8 h-fit lg:h-screen">
+          <Image
+            src={about}
+            alt="about section image"
+            className="w-1/2 lg:w-full aspect-square place-self-center"
+          />
+          <div className="flex md:items-center">
+            <div className="flex items-center lg:items-start flex-col justify-between h-3/4 gap-4 md:gap-8">
               <Text text1={"About"} text2={"Me"} type2="bold" />
               <p className="text-zinc-500">
                 I'm a passionate, self-proclaimed designer who specializes in

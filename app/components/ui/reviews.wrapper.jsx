@@ -29,11 +29,11 @@ export default function ReviewsWrapper() {
   ];
   return (
     <>
-      <div className="flex gap-7 w-4/5">
+      <div className="flex flex-col items-center lg:items-start lg:flex-row gap-7 w-full xl:w-4/5">
         {reviews.map((review, index) => (
           <div
             key={index}
-            className={`w-1/3 p-10 rounded-2xl shadow-2xl ${
+            className={`w-full md:w-3/4 lg:w-1/3 p-10 rounded-2xl shadow-2xl ${
               index % 2 === 1 ? "bg-black text-white" : "bg-white"
             }`}
           >

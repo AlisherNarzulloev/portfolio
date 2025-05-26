@@ -12,18 +12,22 @@ export default function ProjectsWrapper({
 }) {
   return (
     <>
-      <div key={number} className="grid grid-cols-2 gap-8 mt-8">
-        <Image
-          src={image}
-          alt="project1 image"
-          className={`aspect-auto w-full ${index % 2 === 1 ? "order-2" : ""}`}
-        />
+      <div key={number} className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         <div
-          className={`flex items-center ${index % 2 === 1 ? "order-1" : ""}`}
+          className={`aspect-auto w-full overflow-hidden ${
+            index % 2 === 1 ? "md:order-2" : ""
+          }`}
+        >
+          <Image src={image} alt="project1 image" className="w-full" />
+        </div>
+        <div
+          className={`flex md:items-center ${
+            index % 2 === 1 ? "md:order-1" : ""
+          }`}
         >
           <div className="flex flex-col gap-7">
-            <p className="text-5xl font-bold">{number}</p>
-            <p className="text-4xl font-semibold">{title}</p>
+            <p className="text-3xl md:text-5xl font-bold">{number}</p>
+            <p className="text-2xl md:text-4xl font-semibold">{title}</p>
             <p className="text-zinc-500">{description}</p>
             <Link href={link} className="cursor-pointer">
               {icons.link}

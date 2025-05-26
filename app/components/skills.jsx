@@ -28,8 +28,8 @@ export default function Skills() {
   ];
   return (
     <>
-      <SectionWrapper>
-        <div className="flex flex-col items-center gap-16 w-full">
+      <SectionWrapper height="min">
+        <div className="flex flex-col items-center gap-8 lg:gap-16 w-full">
           <Text text1={"My"} text2={"Skills"} type2="bold" />
           <Cards icons={skills} type="grid" />
         </div>

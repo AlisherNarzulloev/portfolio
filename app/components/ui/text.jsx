@@ -14,13 +14,13 @@ export default function Text({
     outline: "font-outline-6 text-white",
   }[type2];
   const sizee = {
-    base: "text-6xl",
-    display: "text-5xl",
+    base: "text-3xl md:text-5xl xl:text-6xl",
+    display: "text-3xl md:text-4xl xl:text-5xl",
   }[size];
 
   return (
     <>
-      <div className={`flex gap-4 ${sizee}`}>
+      <div className={`flex flex-wrap gap-2 md:gap-4 ${sizee}`}>
         {text1 && <span className={styles1}>{text1}</span>}
         {text2 && <span className={styles2}>{text2}</span>}
       </div>

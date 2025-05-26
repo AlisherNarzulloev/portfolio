@@ -5,8 +5,8 @@ import Text from "./ui/text";
 export default function Cta() {
   return (
     <>
-      <SectionWrapper>
-        <div className="grid grid-cols-2 gap-28">
+      <SectionWrapper height="min">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-28">
           <Form />
           <div className="flex flex-col gap-6 justify-center">
             <div className="flex flex-col gap-3">
@@ -27,11 +27,14 @@ export default function Cta() {
             <div className="flex flex-col gap-4">
               <a
                 href="mailto:alishernarzylloev@gmail.com"
-                className="text-3xl font-semibold"
+                className="text-xl md:text-2xl xl:text-3xl font-semibold"
               >
                 alishernarzylloev@gmail.com
               </a>
-              <a href="tel:+992882280220" className="text-3xl font-semibold">
+              <a
+                href="tel:+992882280220"
+                className="text-xl md:text-2xl xl:text-3xl font-semibold"
+              >
                 +992882280220
               </a>
             </div>
